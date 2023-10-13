@@ -728,6 +728,10 @@ video {
   height: 2rem;
 }
 
+.h-\[22rem\] {
+  height: 22rem;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -739,54 +743,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-52 {
-  height: 13rem;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
-.h-9 {
-  height: 2.25rem;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[5rem\] {
-  height: 5rem;
-}
-
-.h-\[15rem\] {
-  height: 15rem;
-}
-
-.h-\[18rem\] {
-  height: 18rem;
-}
-
-.h-\[22rem\] {
-  height: 22rem;
-}
-
-.max-h-8 {
-  max-height: 2rem;
-}
-
-.max-h-80 {
-  max-height: 20rem;
 }
 
 .w-1\/2 {
@@ -863,22 +819,6 @@ video {
 
 .resize {
   resize: both;
-}
-
-.grid-rows-4 {
-  grid-template-rows: repeat(4, minmax(0, 1fr));
-}
-
-.grid-rows-\[\] {
-  grid-template-rows: ;
-}
-
-.grid-rows-\[auto_1\] {
-  grid-template-rows: auto 1;
-}
-
-.grid-rows-\[auto_1fr\] {
-  grid-template-rows: auto 1fr;
 }
 
 .grid-rows-\[auto_1fr_auto\] {
@@ -1289,7 +1229,7 @@ video {
 .bg_footer {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-  background-image: url('img/banner/banner.png');
+  background-image: url('img/banner/banner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
