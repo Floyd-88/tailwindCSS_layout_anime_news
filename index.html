@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>TailwindCSS</title>
+  </head>
+  <body class="bg-white dark:bg-slate-900">
+    <div class="h-screen grid grid-rows-[auto_1fr_auto]">
+      <!-- header -->
+      <header
+        class="bg-gradient-to-r from-sky-500 via-30% to-emerald-500 to-90% dark:from-sky-800 dark:to-emerald-800"
+      >
+        <div
+          class="py-4 flex items-center justify-between max-w-screen-xl mx-auto"
+        >
+          <div class="flex items-center">
+            <div class="flex items-center xl:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mx-4 xl:hidden w-10 h-10 cursor-pointer dark:text-slate-200"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                />
+              </svg>
+            </div>
+            <img src="./dist/img/logo/logo_headar.png" alt="logo" />
+          </div>
+          <nav class="hidden xl:flex">
+            <ul
+              class="flex text-xl text-gray-600 dark:text-slate-300 font-bold uppercase"
+            >
+              <li><a href="#" class="nav_link">Home</a></li>
+              <li><a href="#" class="nav_link">Page</a></li>
+              <li><a href="#" class="nav_link">Naruto</a></li>
+              <li><a href="#" class="nav_link">OnePiece</a></li>
+              <li><a href="#" class="nav_link">Category</a></li>
+            </ul>
+          </nav>
+          <div class="items-center hidden xl:flex">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="p-2 text-gray-500 bg-gray-100 border-2 rounded-md hover:border-gray-600 transition-all duration-300"
+            />
+            <button
+              class="py-2 px-3 ml-2 rounded-md bg-indigo-500 text-white hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-all duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-7 h-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <ul class="hidden sm:flex items-center mx-2">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-4 w-7 h-7 dark:text-slate-300 xl:hidden"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </li>
+            <li><button class="btn_header">Login</button></li>
+            <li><button class="btn_header">Register</button></li>
+          </ul>
+        </div>
+      </header>
+      <div>
+        <!-- banner -->
+        <section class="flex mb-8">
+          <div class="w-full h-72 relative inline-block overflow-hidden">
+            <div
+              class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/50"
+            ></div>
+            <img
+              class="absolute left-0 top-0 w-full h-full z-0 object-cover"
+              src="./dist/img/banner/banner.png"
+              alt="banners"
+            />
+            <div
+              class="flex relative z-20 items-center h-full justify-center text-4xl text-gray-300 font-bold"
+            >
+              Category: Naruto
+            </div>
+          </div>
+        </section>
+
+        <!-- основной контент -->
+        <main
+          class="max-w-screen-lg mx-auto sm:flex sm:flex-row justify-center"
+        >
+          <!-- блок слева -->
+          <aside
+            class="basis-1/4 flex flex-wrap sm:flex-row h-fit ml-2 mr-2 mb-8 p-4 border-t-2 border-gray-100 dark:border-gray-800 shadow-lg shadow-gray-400 dark:shadow-gray-700"
+          >
+            <div class="w-1/2 sm:w-full p-1">
+              <div>
+                <a href="#"
+                  ><img src="./dist/img/prew_cont/1.png" alt="img1"
+                /></a>
+              </div>
+              <div class="mt-3 mb-6">
+                <a href="#"
+                  ><div class="title_prew">Saint Seiya Saintia Sho</div></a
+                >
+                <a href="#"
+                  ><div class="text_prew">
+                    Suspendisse lobortis ullamcorper magna, a cursus dui ...
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="w-1/2 sm:w-full p-1">
+              <div>
+                <a href="#"
+                  ><img src="./dist/img/prew_cont/2.png" alt="img2"
+                /></a>
+              </div>
+              <div class="mt-3 mb-6">
+                <a href="#"
+                  ><div class="title_prew">
+                    The Untapped Gold Mine Of ANIME That
+                  </div></a
+                >
+                <a href="#"
+                  ><div class="text_prew">
+                    Vivamus dapibus mattis arcu, ac aliquet urna lacinia ...
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="w-1/2 sm:w-full p-1">
+              <div>
+                <a href="#"
+                  ><img src="./dist/img/prew_cont/3.png" alt="img3"
+                /></a>
+              </div>
+              <div class="mt-3 mb-6">
+                <a href="#"><div class="title_prew">The Silent Mobius</div></a>
+                <a href="#"
+                  ><div class="text_prew">
+                    Aliquam et lectus sed quam placerat tincidunt quis a ...
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="w-1/2 sm:w-full p-1">
+              <div>
+                <a href="#"
+                  ><img src="./dist/img/prew_cont/4.png" alt="img4"
+                /></a>
+              </div>
+              <div class="mt-3 mb-6">
+                <a href="#"
+                  ><div class="title_prew">
+                    Night Warriors Darkstalkers’ Revenge
+                  </div></a
+                >
+                <a href="#"
+                  ><div class="text_prew">
+                    Curabitur sodales, augue in lobortis tincidunt, sapien ...
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="w-1/2 sm:w-full p-1">
+              <div>
+                <a href="#"
+                  ><img src="./dist/img/prew_cont/5.png" alt="img5"
+                /></a>
+              </div>
+              <div class="mt-3 mb-6">
+                <a href="#"
+                  ><div class="title_prew">
+                    What Zombies Can Teach You About ANIME
+                  </div></a
+                >
+                <a href="#"
+                  ><div class="text_prew">
+                    Nullam maximus sagittis nisl vitae pulvinar. Vivamus ...
+                  </div></a
+                >
+              </div>
+            </div>
+          </aside>
+
+          <!-- блок справа -->
+          <section class="basis-3/4">
+            <div class="container_news">
+              <a href="#">
+                <div>
+                  <h3 class="container_news_title">
+                    What Zombies Can Teach You About ANIME
+                  </h3>
+                </div>
+              </a>
+              <a href="#">
+                <div class="relative inline-block overflow-hidden">
+                  <img src="./dist/img/content/1-bg.png" alt="img3-bg" />
+                  <div
+                    class="w-40 h-14 text-lg text-white absolute top-10 left-10 font-medium rounded-md bg-red-400"
+                  >
+                    <div class="flex justify-center items-center h-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                        />
+                      </svg>
+                      <div class="pl-2 flex items-center">Oct 10, 2023</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="mt-4">
+                <a href="#">
+                  <div
+                    class="text-gray-700 font-bold hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-500"
+                  >
+                    Nullam maximus sagittis nisl vitae pulvinar. Vivamus eget
+                    rutrum eros. In consequat, lorem at euismod ultrices, diam
+                    justo accumsan lectus, id finibus leo lorem laoreet elit.
+                    Vivamus venenatis justo a purus bibendum lobortis. In sit
+                    amet dolor purus ...
+                  </div>
+                </a>
+                <div class="flex justify-between mt-2">
+                  <div class="flex">
+                    <div class="pr-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-6 h-6 fill-red-500"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.25 2A2.25 2.25 0 002 4.25v11.5A2.25 2.25 0 004.25 18h11.5A2.25 2.25 0 0018 15.75V4.25A2.25 2.25 0 0015.75 2H4.25zm4.03 6.28a.75.75 0 00-1.06-1.06L4.97 9.47a.75.75 0 000 1.06l2.25 2.25a.75.75 0 001.06-1.06L6.56 10l1.72-1.72zm4.5-1.06a.75.75 0 10-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-gray-700 dark:text-gray-400">
+                      <a class="hover:font-medium" href="#">Fantasy,</a>
+                      <a class="hover:font-medium" href="#">Naruto</a>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div class="pr-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-6 h-6 fill-red-500"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5 3A2.5 2.5 0 003 5.5v2.879a2.5 2.5 0 00.732 1.767l6.5 6.5a2.5 2.5 0 003.536 0l2.878-2.878a2.5 2.5 0 000-3.536l-6.5-6.5A2.5 2.5 0 008.38 3H5.5zM6 7a1 1 0 100-2 1 1 0 000 2z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-gray-700 dark:text-gray-400">
+                      <a class="hover:font-medium" href="#">Animeart,</a>
+                      <a class="hover:font-medium" href="#">Manga,</a>
+                      <a class="hover:font-medium" href="#">Otaku</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container_news">
+              <a href="#">
+                <div>
+                  <h3 class="container_news_title">
+                    Who Else Wants To Be Successful With ANIME
+                  </h3>
+                </div>
+              </a>
+              <a href="#">
+                <div class="relative inline-block overflow-hidden">
+                  <img src="./dist/img/content/2-bg.png" alt="img3-bg" />
+                  <div
+                    class="w-40 h-14 text-lg text-white absolute top-10 left-10 font-medium rounded-md bg-red-400"
+                  >
+                    <div class="flex justify-center items-center h-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                        />
+                      </svg>
+                      <div class="pl-2 flex items-center">Oct 8, 2023</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="mt-4">
+                <a href="#">
+                  <div
+                    class="text-gray-700 font-bold hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-500"
+                  >
+                    Morbi faucibus turpis nibh, sed consectetur risus suscipit
+                    non. Mauris eleifend dignissim ipsum sit amet scelerisque.
+                    Pellentesque vel commodo libero. Donec nisi lorem, tincidunt
+                    a consectetur at, ultrices eget mi. Fusce et ornare massa.
+                    Maecenas quis libero a risus fringilla tempor. Pellentesq
+                    ...
+                  </div>
+                </a>
+                <div class="flex justify-between mt-2">
+                  <div class="flex">
+                    <div class="pr-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-6 h-6 fill-red-500"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.25 2A2.25 2.25 0 002 4.25v11.5A2.25 2.25 0 004.25 18h11.5A2.25 2.25 0 0018 15.75V4.25A2.25 2.25 0 0015.75 2H4.25zm4.03 6.28a.75.75 0 00-1.06-1.06L4.97 9.47a.75.75 0 000 1.06l2.25 2.25a.75.75 0 001.06-1.06L6.56 10l1.72-1.72zm4.5-1.06a.75.75 0 10-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-gray-700 dark:text-gray-400">
+                      <a class="hover:font-medium" href="#">Comedy Anime,</a>
+                      <a class="hover:font-medium" href="#">Naruto</a>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div class="pr-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-6 h-6 fill-red-500"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5 3A2.5 2.5 0 003 5.5v2.879a2.5 2.5 0 00.732 1.767l6.5 6.5a2.5 2.5 0 003.536 0l2.878-2.878a2.5 2.5 0 000-3.536l-6.5-6.5A2.5 2.5 0 008.38 3H5.5zM6 7a1 1 0 100-2 1 1 0 000 2z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-gray-700 dark:text-gray-400">
+                      <a class="hover:font-medium" href="#">Digitalart,</a>
+                      <a class="hover:font-medium" href="#">Dragonball,</a>
+                      <a class="hover:font-medium" href="#">Naruto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container_news">
+              <a href="#">
+                <div>
+                  <h3 class="container_news_title">The Silent Mobius</h3>
+                </div>
+              </a>
+              <a href="#">
+                <div class="relative inline-block overflow-hidden">
+                  <img src="./dist/img/content/3-bg.png" alt="img3-bg" />
+                  <div
+                    class="w-40 h-14 text-lg text-white absolute top-10 left-10 font-medium rounded-md bg-red-400"
+                  >
+                    <div class="flex justify-center items-center h-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                        />
+                      </svg>
+                      <div class="pl-2 flex items-center">Oct 6, 2023</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="mt-4">
+                <a href="#">
+                  <div
+                    class="text-gray-700 font-bold hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-500"
+                  >
+                    Aliquam et lectus sed quam placerat tincidunt quis a enim.
+                    Nullam quis lobortis eros. Sed facilisis libero vitae nibh
+                    laoreet, nec mollis lorem vulputate. Nullam vel interdum
+                    magna. Nam blandit, felis gravida laoreet congue, nunc neque
+                    viverra leo, posuere tincidunt magna risus efficitu ...
+                  </div>
+                </a>
+                <div class="flex justify-between mt-2">
+                  <div class="flex">
+                    <div class="pr-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-6 h-6 fill-red-500"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.25 2A2.25 2.25 0 002 4.25v11.5A2.25 2.25 0 004.25 18h11.5A2.25 2.25 0 0018 15.75V4.25A2.25 2.25 0 0015.75 2H4.25zm4.03 6.28a.75.75 0 00-1.06-1.06L4.97 9.47a.75.75 0 000 1.06l2.25 2.25a.75.75 0 001.06-1.06L6.56 10l1.72-1.72zm4.5-1.06a.75.75 0 10-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-gray-700 dark:text-gray-400">
+                      <a class="hover:font-medium" href="#">Action Anime,</a>
+                      <a class="hover:font-medium" href="#">Fantasy</a>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div class="pr-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-6 h-6 fill-red-500"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5 3A2.5 2.5 0 003 5.5v2.879a2.5 2.5 0 00.732 1.767l6.5 6.5a2.5 2.5 0 003.536 0l2.878-2.878a2.5 2.5 0 000-3.536l-6.5-6.5A2.5 2.5 0 008.38 3H5.5zM6 7a1 1 0 100-2 1 1 0 000 2z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-gray-700 dark:text-gray-400">
+                      <a class="hover:font-medium" href="#">Animegirl,</a>
+                      <a class="hover:font-medium" href="#">Art,</a>
+                      <a class="hover:font-medium" href="#">Dragonball</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container_news">
+              <a href="#">
+                <div>
+                  <h3 class="container_news_title">
+                    3 Ways To Master ANIME Without Breaking A Sweat
+                  </h3>
+                </div>
+              </a>
+              <a href="#">
+                <div class="relative inline-block overflow-hidden">
+                  <img src="./dist/img/content/4-bg.png" alt="img3-bg" />
+                  <div
+                    class="w-40 h-14 text-lg text-white absolute top-10 left-10 font-medium rounded-md bg-red-400"
+                  >
+                    <div class="flex justify-center items-center h-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                        />
+                      </svg>
+                      <div class="pl-2 flex items-center">Oct 5, 2023</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="mt-4">
+                <a href="#">
+                  <div
+                    class="text-gray-700 font-bold hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-500"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in ...
+                  </div>
+                </a>
+                <div class="flex justify-between mt-2">
+                  <div class="flex">
+                    <div class="pr-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-6 h-6 fill-red-500"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.25 2A2.25 2.25 0 002 4.25v11.5A2.25 2.25 0 004.25 18h11.5A2.25 2.25 0 0018 15.75V4.25A2.25 2.25 0 0015.75 2H4.25zm4.03 6.28a.75.75 0 00-1.06-1.06L4.97 9.47a.75.75 0 000 1.06l2.25 2.25a.75.75 0 001.06-1.06L6.56 10l1.72-1.72zm4.5-1.06a.75.75 0 10-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-gray-700 dark:text-gray-400">
+                      <a class="hover:font-medium" href="#">Action Anime,</a>
+                      <a class="hover:font-medium" href="#">Fantasy</a>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div class="pr-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-6 h-6 fill-red-500"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.25 2A2.25 2.25 0 002 4.25v11.5A2.25 2.25 0 004.25 18h11.5A2.25 2.25 0 0018 15.75V4.25A2.25 2.25 0 0015.75 2H4.25zm4.03 6.28a.75.75 0 00-1.06-1.06L4.97 9.47a.75.75 0 000 1.06l2.25 2.25a.75.75 0 001.06-1.06L6.56 10l1.72-1.72zm4.5-1.06a.75.75 0 10-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-gray-700 dark:text-gray-400">
+                      <a class="hover:font-medium" href="#">Animeart,</a>
+                      <a class="hover:font-medium" href="#">Animeedit,</a>
+                      <a class="hover:font-medium" href="#">Manga</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container_news">
+              <a href="#">
+                <div>
+                  <h3 class="container_news_title">
+                    The ANIME Mystery Revealed
+                  </h3>
+                </div>
+              </a>
+              <a href="#">
+                <div class="relative inline-block overflow-hidden">
+                  <img src="./dist/img/content/5-bg.png" alt="img3-bg" />
+                  <div
+                    class="w-40 h-14 text-lg text-white absolute top-10 left-10 font-medium rounded-md bg-red-400"
+                  >
+                    <div class="flex justify-center items-center h-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                        />
+                      </svg>
+                      <div class="pl-2 flex items-center">Oct 2, 2023</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="mt-4">
+                <a href="#">
+                  <div
+                    class="text-gray-700 font-bold hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-500"
+                  >
+                    Sed sagittis neque nulla. Mauris dignissim egestas urna,
+                    tincidunt tristique lorem pellentesque quis. Nam
+                    pellentesque efficitur lectus dictum tristique. Sed rhoncus
+                    pretium felis non dictum. Nulla viverra purus vel purus
+                    egestas, non posuere neque viverra. Phasellus tortor lacus,
+                    euismod ...
+                  </div>
+                </a>
+                <div class="flex justify-between mt-2">
+                  <div class="flex">
+                    <div class="pr-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-6 h-6 fill-red-500"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.25 2A2.25 2.25 0 002 4.25v11.5A2.25 2.25 0 004.25 18h11.5A2.25 2.25 0 0018 15.75V4.25A2.25 2.25 0 0015.75 2H4.25zm4.03 6.28a.75.75 0 00-1.06-1.06L4.97 9.47a.75.75 0 000 1.06l2.25 2.25a.75.75 0 001.06-1.06L6.56 10l1.72-1.72zm4.5-1.06a.75.75 0 10-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-gray-700 dark:text-gray-400">
+                      <a class="hover:font-medium" href="#">Drama Anime,</a>
+                      <a class="hover:font-medium" href="#">Fantasy</a>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div class="pr-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-6 h-6 fill-red-500"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5 3A2.5 2.5 0 003 5.5v2.879a2.5 2.5 0 00.732 1.767l6.5 6.5a2.5 2.5 0 003.536 0l2.878-2.878a2.5 2.5 0 000-3.536l-6.5-6.5A2.5 2.5 0 008.38 3H5.5zM6 7a1 1 0 100-2 1 1 0 000 2z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-gray-700 dark:text-gray-400">
+                      <a class="hover:font-medium" href="#">Animegirl,</a>
+                      <a class="hover:font-medium" href="#">Otaku,</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- pagination -->
+            <div class="mt-10 mb-10">
+              <ul class="flex justify-center">
+                <li><a class="pagination rounded-l" href="#">Back</a></li>
+                <li><a class="pagination" href="#">1</a></li>
+                <li><a class="pagination" href="#">2</a></li>
+                <li>
+                  <a
+                    class="pagination bg-gray-200 text-indigo-700 hover:bg-gray-200 hover:text-indigo-700 font-medium"
+                    href="#"
+                    >3</a
+                  >
+                </li>
+                <li><a class="pagination" href="#">4</a></li>
+                <li><a class="pagination" href="#">5</a></li>
+                <li><a class="pagination rounded-r" href="#">Next</a></li>
+              </ul>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <!-- footer -->
+      <footer
+        class="flex-row bg_footer h-[22rem] py-12 bg-cover text-white accent-emerald-500/25"
+      >
+        <div
+          class="max-w-screen-xl flex flex-col sm:flex-row mx-auto justify-center mb-4 px-4 text-gray-300"
+        >
+          <div class="sm:flex">
+            <div class="mb-4 sm:basis-1/4">
+              <div class="flex justify-between">
+                <div class="text-xl mb-2 font-bold">Quick links</div>
+                <div class="sm:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-8 h-8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="hidden sm:flex">
+                <ul class="font-medium">
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">About me</li>
+                  </a>
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">Services</li></a
+                  >
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">Faq</li></a
+                  >
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">Contact us</li></a
+                  >
+                </ul>
+              </div>
+            </div>
+
+            <div class="mb-4 sm:basis-1/4">
+              <div class="flex justify-between">
+                <div class="text-xl mb-2 font-bold">Category</div>
+                <div class="sm:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-8 h-8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="hidden sm:flex">
+                <ul>
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">Drama Anime</li></a
+                  >
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">Romance Anime</li></a
+                  >
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">Mecha Anime</li></a
+                  >
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">Action Anime</li></a
+                  >
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">Comedy Anime</li></a
+                  >
+                </ul>
+              </div>
+            </div>
+
+            <div class="mb-4 sm:basis-1/4">
+              <div class="flex justify-between">
+                <div class="text-xl mb-2 font-bold">Useful links</div>
+                <div class="sm:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-8 h-8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="hidden sm:flex">
+                <ul>
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current cursor-pointer"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">Blog-Right side</li></a
+                  >
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current cursor-pointer"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">Blog-Left side</li></a
+                  >
+                  <a href="#" class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 stroke-current cursor-pointer"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <li class="hover:text-white">Contact us</li></a
+                  >
+                </ul>
+              </div>
+            </div>
+
+            <div class="mb-4 sm:basis-1/3 sm:w-full">
+              <div class="flex justify-between">
+                <div class="text-xl mb-2 font-bold">Work Hours</div>
+                <div class="sm:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-8 h-8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="hidden sm:block">
+                <div>
+                  Lorem ipsum dolor sit amet, wetrfrgtg consectetur adipiscing
+                  elit.
+                </div>
+                <div class="flex flex-wrap justify-center sm:flex mt-8">
+                  <div class="m-3">
+                    <a href="#"
+                      ><img
+                        src="./dist/img/icons_network/fb_footer.png"
+                        alt="fb"
+                    /></a>
+                  </div>
+                  <div class="m-3">
+                    <a href="#"
+                      ><img
+                        src="./dist/img/icons_network/twitter_footer.png"
+                        alt="twitter"
+                    /></a>
+                  </div>
+                  <div class="m-3">
+                    <a href="#"
+                      ><img
+                        src="./dist/img/icons_network/in_footer.png"
+                        alt="in"
+                    /></a>
+                  </div>
+                  <div class="m-3">
+                    <a href="#"
+                      ><img
+                        src="./dist/img/icons_network/dribbble_footer.png"
+                        alt="dribble"
+                    /></a>
+                  </div>
+                  <div class="m-3">
+                    <a href="#"
+                      ><img
+                        src="./dist/img/icons_network/instagram_footer.png"
+                        alt="instagramm"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <img src="./dist/img/logo/logo-footer.png" alt="logo_footer" />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
